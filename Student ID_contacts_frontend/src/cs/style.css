@@ -1,0 +1,51 @@
+/* Tailwind CSS 样式 */
+@import url('https://cdn.tailwindcss.com');
+
+/* 自定义样式 */
+:root {
+    --primary: #3b82f6;
+    --secondary: #64748b;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+    --light: #f1f5f9;
+    --dark: #1e293b;
+}
+
+.content-auto { content-visibility: auto; }
+.sidebar-active { 
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+    border-left: 4px solid var(--primary);
+}
+.contact-card-hover { 
+    transition: all 0.3s;
+}
+.contact-card-hover:hover { 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
+.btn-primary:hover {
+    background-color: rgba(59, 130, 246, 0.9);
+}
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.hidden {
+    display: none;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Address Book</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+    <!-- 页面结构与之前的app.html相同，但将内联样式和脚本移到外部文件 -->
+    <header class="bg-white shadow-md z-30">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <i class="fa fa-address-book text-primary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-primary">Address Book</h1>
+            </div>
+            <div class="flex items-center space-x-2">
+                <button id="add-contact-btn" class="btn-primary flex items-center">
+                    <i class="fa fa-plus mr-2"></i>
+                    <span class="hidden sm:inline">Add Contact</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex flex-col md:flex-row">
+        <!-- 侧边栏和主要内容区域 -->
+        <aside class="w-full md:w-64 bg-white shadow-md md:h-[calc(100vh-64px)] overflow-y-auto" id="sidebar">
+            <!-- 侧边栏内容 -->
+        </aside>
+        
+        <div class="flex-grow p-4 md:p-6 overflow-y-auto">
+            <!-- 联系人列表和分组内容 -->
+        </div>
+    </main>
+
+    <!-- 模态框 -->
+    <div id="contact-modal" class="modal hidden">
+        <!-- 模态框内容 -->
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
